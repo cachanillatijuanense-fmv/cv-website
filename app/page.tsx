@@ -1,24 +1,23 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useSearchParams } from "next/navigation"
 import { type Language, getLanguage, loadTranslations } from "@/lib/i18n"
-import type { Role } from "@/lib/roles"
 import siteData from "@/content/site.json"
+import experienceData from "@/content/experience.json"
+import skillsData from "@/content/skills.json"
+import toolsData from "@/content/tools.json"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
-import { Highlights } from "@/components/highlights"
 import { Experience } from "@/components/experience"
-import { SkillsMatrix } from "@/components/skills-matrix"
 import { ContactForm } from "@/components/contact-form"
-import { StickyCTA } from "@/components/sticky-cta"
 import { Footer } from "@/components/footer"
+import { About } from "@/components/about"
+import { Skills } from "@/components/skills"
+import { Tools } from "@/components/tools"
 
 export default function HomePage() {
-  const searchParams = useSearchParams()
   const [language, setLanguage] = useState<Language>("en")
   const [translations, setTranslations] = useState<any>(null)
-  const [currentRole, setCurrentRole] = useState<Role | null>(null)
 
   useEffect(() => {
     const initLanguage = getLanguage()
@@ -26,28 +25,10 @@ export default function HomePage() {
     setTranslations(loadTranslations(initLanguage))
   }, [])
 
-  useEffect(() => {
-    const roleParam = searchParams.get("role")
-    if (roleParam && ["product-owner", "delivery", "salesforce", "restaurant-tech"].includes(roleParam)) {
-      setCurrentRole(roleParam as Role)
-    }
-  }, [searchParams])
-
   const handleLanguageChange = (lang: Language) => {
     setLanguage(lang)
     const newTranslations = loadTranslations(lang)
     setTranslations(newTranslations)
-  }
-
-  const handleRoleChange = (role: Role | null) => {
-    setCurrentRole(role)
-    const url = new URL(window.location.href)
-    if (role) {
-      url.searchParams.set("role", role)
-    } else {
-      url.searchParams.delete("role")
-    }
-    window.history.pushState({}, "", url)
   }
 
   if (!translations) {
@@ -60,26 +41,21 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      <Navbar
-        translations={translations}
-        currentRole={currentRole}
-        onRoleChange={handleRoleChange}
-        onLanguageChange={handleLanguageChange}
-      />
+      <Navbar translations={translations} onLanguageChange={handleLanguageChange} />
 
       <main>
-        <Hero data={siteData} language={language} role={currentRole} translations={translations} />
+        <Hero data={siteData} language={language} translations={translations} />
 
-        <Highlights data={siteData.highlights} language={language} role={currentRole} translations={translations} />
+        <About data={siteData} language={language} translations={translations} />
 
-        <Experience data={siteData.experience} language={language} role={currentRole} translations={translations} />
+        <Skills data={skillsData} translations={translations} />
 
-        <SkillsMatrix data={siteData.skills} language={language} role={currentRole} translations={translations} />
+        <Experience data={experienceData} language={language} translations={translations} />
+
+        <Tools data={toolsData} translations={translations} />
 
         <ContactForm translations={translations} />
       </main>
-
-      <StickyCTA contacts={siteData.identity.contacts} translations={translations} />
 
       <Footer data={siteData} translations={translations} />
     </div>

@@ -15,16 +15,30 @@ export function Footer({ data, translations }: FooterProps) {
           {/* Contact CTAs */}
           <div className="space-y-4">
             <h3 className="font-bold text-lg">{translations.sections.contact}</h3>
-            <CTAButtons contacts={data.identity.contacts} translations={translations} />
+            <CTAButtons
+              contacts={
+                data
+                  ? {
+                      email: data.contact?.email ? `mailto:${data.contact.email}` : undefined,
+                      whatsapp: data.hero?.whatsapp_number
+                        ? `https://wa.me/${String(data.hero.whatsapp_number).replace(/[^0-9]/g, "")}`
+                        : undefined,
+                      phone: data.hero?.phone_number ? `tel:${data.hero.phone_number}` : undefined,
+                      sms: data.hero?.sms_number ? `sms:${data.hero.sms_number}` : undefined,
+                    }
+                  : undefined
+              }
+              translations={translations}
+            />
           </div>
 
           {/* Social Links */}
           <div className="space-y-4">
             <h3 className="font-bold text-lg">Social</h3>
             <div className="flex gap-4">
-              {data.identity.contacts.linkedin && (
+              {data.contact?.linkedin && (
                 <a
-                  href={data.identity.contacts.linkedin}
+                  href={data.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -43,9 +57,6 @@ export function Footer({ data, translations }: FooterProps) {
               <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
                 {translations.nav.home}
               </Link>
-              <Link href="/tailor" className="text-muted-foreground hover:text-foreground transition-colors">
-                {translations.nav.tailor}
-              </Link>
               <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
                 {translations.nav.privacy}
               </Link>
@@ -55,7 +66,7 @@ export function Footer({ data, translations }: FooterProps) {
 
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} {data.identity.name}. {translations.footer.rights}
+            © {new Date().getFullYear()} {data.hero?.name}. {translations.footer.rights}
           </p>
           <p className="mt-2">{translations.footer.builtWith}</p>
         </div>

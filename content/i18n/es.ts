@@ -9,6 +9,7 @@ export default {
     whatsapp: "WhatsApp",
     phone: "Llamar",
     email: "Email",
+    sms: "SMS",
     contact: "Contáctame",
   },
   hero: {
@@ -20,6 +21,7 @@ export default {
     highlights: "Logros Clave",
     experience: "Experiencia",
     skills: "Habilidades y Expertise",
+    tools: "Herramientas",
     contact: "Contacto",
   },
   role: {

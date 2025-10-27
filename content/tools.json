@@ -1,0 +1,47 @@
+{
+  "tools": {
+    "CRM & Business Platforms": [
+      "Salesforce",
+      "Zoho",
+      "Active Campaign",
+      "Pipedrive"
+    ],
+    "AI & Automation": [
+      "ChatGPT",
+      "Claude Sonnet",
+      "DeepSeek",
+      "ElevenLabs",
+      "n8n",
+      "Zapier"
+    ],
+    "Development & Prototyping": [
+      "Cursor.app",
+      "Bolt.new",
+      "Lovable.dev",
+      "v0.app",
+      "GitHub",
+      "Vercel",
+      "Netlify"
+    ],
+    "Databases": ["Neon", "Supabase"],
+    "Design & Collaboration": [
+      "Figma",
+      "Miro",
+      "Gamma.app",
+      "Draw.io",
+      "Notion",
+      "Loom"
+    ],
+    "Talent & Freelance Platforms": ["Upwork"],
+    "Communication & Productivity": [
+      "Microsoft Teams",
+      "Slack",
+      "Zoom",
+      "Google Suite",
+      "Microsoft Office",
+      "Calendly"
+    ]
+  }
+}
+
+

@@ -2,8 +2,6 @@
 
 import Link from "next/link"
 import { LanguageSwitcher } from "./language-switcher"
-import { RoleSwitcher } from "./role-switcher"
-import type { Role } from "@/lib/roles"
 import type { Language } from "@/lib/i18n"
 import { Button } from "./ui/button"
 import { Menu, X } from "lucide-react"
@@ -11,12 +9,10 @@ import { useState } from "react"
 
 interface NavbarProps {
   translations: any
-  currentRole: Role | null
-  onRoleChange: (role: Role | null) => void
   onLanguageChange: (lang: Language) => void
 }
 
-export function Navbar({ translations, currentRole, onRoleChange, onLanguageChange }: NavbarProps) {
+export function Navbar({ translations, onLanguageChange }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -32,10 +28,6 @@ export function Navbar({ translations, currentRole, onRoleChange, onLanguageChan
             <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
               {translations.nav.home}
             </Link>
-            <Link href="/tailor" className="text-sm font-medium hover:text-primary transition-colors">
-              {translations.nav.tailor}
-            </Link>
-            <RoleSwitcher currentRole={currentRole} onRoleChange={onRoleChange} translations={translations} />
             <LanguageSwitcher onLanguageChange={onLanguageChange} />
           </div>
 
@@ -55,16 +47,6 @@ export function Navbar({ translations, currentRole, onRoleChange, onLanguageChan
             >
               {translations.nav.home}
             </Link>
-            <Link
-              href="/tailor"
-              className="block text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {translations.nav.tailor}
-            </Link>
-            <div className="pt-2">
-              <RoleSwitcher currentRole={currentRole} onRoleChange={onRoleChange} translations={translations} />
-            </div>
             <LanguageSwitcher onLanguageChange={onLanguageChange} />
           </div>
         )}

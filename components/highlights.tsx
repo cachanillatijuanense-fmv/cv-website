@@ -2,21 +2,16 @@
 
 import { motion } from "framer-motion"
 import type { Language } from "@/lib/i18n"
-import type { Role } from "@/lib/roles"
-import { sortByRole } from "@/lib/sort"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Badge } from "./ui/badge"
 import { CheckCircle2 } from "lucide-react"
 
 interface HighlightsProps {
   data: any[]
   language: Language
-  role: Role | null
   translations: any
 }
 
-export function Highlights({ data, language, role, translations }: HighlightsProps) {
-  const sortedHighlights = sortByRole(data, role)
+export function Highlights({ data, language, translations }: HighlightsProps) {
 
   return (
     <section className="py-16 md:py-24">
@@ -32,7 +27,7 @@ export function Highlights({ data, language, role, translations }: HighlightsPro
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-          {sortedHighlights.map((highlight: any, index: number) => (
+          {data.map((highlight: any, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -52,11 +47,6 @@ export function Highlights({ data, language, role, translations }: HighlightsPro
                   <div className="rounded-lg bg-accent/10 p-4 border-l-4 border-accent">
                     <p className="text-sm font-medium">{highlight.proof[language]}</p>
                   </div>
-                  {role && highlight.tags?.includes(role) && (
-                    <Badge variant="secondary" className="mt-4">
-                      {translations.role[role]}
-                    </Badge>
-                  )}
                 </CardContent>
               </Card>
             </motion.div>

@@ -3,28 +3,24 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import type { Language } from "@/lib/i18n"
-import type { Role } from "@/lib/roles"
-import { sortByRole } from "@/lib/sort"
 import { Expand } from "./ui/expand"
 import { ChevronDown, ChevronUp, Briefcase } from "lucide-react"
 
 interface ExperienceProps {
-  data: any[]
+  data: { recent: any[]; older_collapsed: any[] }
   language: Language
-  role: Role | null
   translations: any
 }
 
-export function Experience({ data, language, role, translations }: ExperienceProps) {
-  const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set([0]))
-  const sortedExperience = sortByRole(data, role)
+export function Experience({ data, language, translations }: ExperienceProps) {
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set())
 
-  const toggleItem = (index: number) => {
+  const toggleItem = (id: string) => {
     const newExpanded = new Set(expandedItems)
-    if (newExpanded.has(index)) {
-      newExpanded.delete(index)
+    if (newExpanded.has(id)) {
+      newExpanded.delete(id)
     } else {
-      newExpanded.add(index)
+      newExpanded.add(id)
     }
     setExpandedItems(newExpanded)
   }
@@ -43,8 +39,9 @@ export function Experience({ data, language, role, translations }: ExperiencePro
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          {sortedExperience.map((exp: any, index: number) => {
-            const isExpanded = expandedItems.has(index)
+          {data.recent.map((exp: any, index: number) => {
+            const id = `recent-${index}`
+            const isExpanded = expandedItems.has(id)
 
             return (
               <motion.div
@@ -56,13 +53,13 @@ export function Experience({ data, language, role, translations }: ExperiencePro
                 className="relative"
               >
                 {/* Timeline Line */}
-                {index < sortedExperience.length - 1 && (
+                {index < data.recent.length - 1 && (
                   <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-border -translate-x-1/2" />
                 )}
 
                 <div className="bg-background rounded-lg border shadow-sm overflow-hidden">
                   <button
-                    onClick={() => toggleItem(index)}
+                    onClick={() => toggleItem(id)}
                     className="w-full text-left p-6 hover:bg-muted/50 transition-colors"
                   >
                     <div className="flex items-start gap-4">
@@ -76,7 +73,7 @@ export function Experience({ data, language, role, translations }: ExperiencePro
                         <div className="flex items-start justify-between gap-4 mb-2">
                           <div>
                             <h3 className="text-xl font-bold">{exp.company}</h3>
-                            <p className="text-lg text-muted-foreground">{exp.role[language]}</p>
+                            <p className="text-lg text-muted-foreground">{exp.role}</p>
                           </div>
                           <span className="text-sm text-muted-foreground whitespace-nowrap">{exp.period}</span>
                         </div>
@@ -92,7 +89,7 @@ export function Experience({ data, language, role, translations }: ExperiencePro
                   <Expand isOpen={isExpanded}>
                     <div className="px-6 pb-6 pl-[88px]">
                       <ul className="space-y-2">
-                        {exp.bullets.map((bullet: any, bulletIndex: number) => (
+                        {(language === "es" ? exp.bullets_es : exp.bullets_en).map((bullet: string, bulletIndex: number) => (
                           <motion.li
                             key={bulletIndex}
                             initial={{ opacity: 0 }}
@@ -101,7 +98,7 @@ export function Experience({ data, language, role, translations }: ExperiencePro
                             className="flex items-start gap-3"
                           >
                             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
-                            <span className="text-muted-foreground">{bullet[language]}</span>
+                            <span className="text-muted-foreground">{bullet}</span>
                           </motion.li>
                         ))}
                       </ul>
@@ -112,6 +109,82 @@ export function Experience({ data, language, role, translations }: ExperiencePro
             )
           })}
         </div>
+
+        {/* Older collapsed section */}
+        {data.older_collapsed && data.older_collapsed.length > 0 && (
+          <div className="max-w-4xl mx-auto mt-10">
+            <details className="group">
+              <summary className="cursor-pointer text-center text-sm text-muted-foreground hover:text-foreground">
+                {language === "es" ? "Ver experiencia anterior" : "Show older experience"}
+              </summary>
+              <div className="mt-6 space-y-6">
+                {data.older_collapsed.map((exp: any, index: number) => {
+                  const id = `older-${index}`
+                  const isExpanded = expandedItems.has(id)
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.05 }}
+                      className="relative"
+                    >
+                      <div className="bg-background rounded-lg border shadow-sm overflow-hidden">
+                        <button
+                          onClick={() => toggleItem(id)}
+                          className="w-full text-left p-6 hover:bg-muted/50 transition-colors"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="relative z-10 flex-shrink-0">
+                              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center border-2 border-background shadow-sm">
+                                <Briefcase className="h-6 w-6 text-primary" />
+                              </div>
+                            </div>
+
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-start justify-between gap-4 mb-2">
+                                <div>
+                                  <h3 className="text-xl font-bold">{exp.company}</h3>
+                                  <p className="text-lg text-muted-foreground">{exp.role}</p>
+                                </div>
+                                <span className="text-sm text-muted-foreground whitespace-nowrap">{exp.period}</span>
+                              </div>
+
+                              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <span>{isExpanded ? translations.experience.collapse : translations.experience.expand}</span>
+                                {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+
+                        <Expand isOpen={isExpanded}>
+                          <div className="px-6 pb-6 pl-[88px]">
+                            <ul className="space-y-2">
+                              {(language === "es" ? exp.bullets_es : exp.bullets_en).map((bullet: string, bulletIndex: number) => (
+                                <motion.li
+                                  key={bulletIndex}
+                                  initial={{ opacity: 0 }}
+                                  animate={{ opacity: 1 }}
+                                  transition={{ delay: bulletIndex * 0.05 }}
+                                  className="flex items-start gap-3"
+                                >
+                                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                                  <span className="text-muted-foreground">{bullet}</span>
+                                </motion.li>
+                              ))}
+                            </ul>
+                          </div>
+                        </Expand>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+            </details>
+          </div>
+        )}
       </div>
     </section>
   )

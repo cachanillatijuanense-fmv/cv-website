@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "Leadership & Strategy": [
+      "Business strategy alignment",
+      "Cross-functional team leadership",
+      "Operational optimization",
+      "Project and delivery management",
+      "Process design and improvement",
+      "Change management",
+      "Client relationship management"
+    ],
+    "Technology & Innovation": [
+      "AI-assisted software development",
+      "System architecture design",
+      "Custom software implementation",
+      "Digital transformation strategy",
+      "Automation and workflow orchestration",
+      "Data-driven decision making"
+    ],
+    "Management & Methodologies": [
+      "Agile project management (Scrum / Kanban)",
+      "OKRs and performance tracking",
+      "Team training and mentoring",
+      "Process documentation and scalability",
+      "Recruitment and talent alignment (internal & freelance)"
+    ],
+    "Communication & Collaboration": [
+      "Executive communication",
+      "Bilingual (English/Spanish, C2 proficiency)",
+      "Remote and multicultural coordination",
+      "Presentation and stakeholder engagement"
+    ]
+  }
+}
+
+
