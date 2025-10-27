@@ -22,6 +22,15 @@ export const TAG_MAP: Record<string, Role> = {
   operations: "delivery",
   execution: "delivery",
 
+  // Leadership & Operations Strategy keywords (expanded)
+  "solutions leader": "delivery",
+  "operations leader": "delivery",
+  "business strategy": "delivery",
+  "process design": "delivery",
+  "delivery management": "delivery",
+  implementation: "delivery",
+  director: "delivery",
+
   // Salesforce keywords
   salesforce: "salesforce",
   crm: "salesforce",
@@ -40,6 +49,17 @@ export const TAG_MAP: Record<string, Role> = {
   menu: "restaurant-tech",
   kitchen: "restaurant-tech",
 }
+
+// Non-destructive export for external use if needed
+export const leadershipKeywords = [
+  "solutions leader",
+  "operations leader",
+  "business strategy",
+  "process design",
+  "delivery management",
+  "implementation",
+  "director",
+]
 
 export function detectRole(text: string): Role {
   const lowerText = text.toLowerCase()

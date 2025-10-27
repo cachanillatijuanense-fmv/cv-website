@@ -36,9 +36,14 @@ export function Hero({ data, language, role, translations }: HeroProps) {
           >
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-                {data.hero.headline[language]}
+                {data.identity.name}
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground text-pretty">{data.hero.subheadline[language]}</p>
+              <h2 className="text-xl md:text-2xl font-semibold text-pretty">
+                {data.identity.title[language]}
+              </h2>
+              {data.hero?.subtitle?.[language] && (
+                <p className="text-lg md:text-xl text-muted-foreground text-pretty">{data.hero.subtitle[language]}</p>
+              )}
             </div>
 
             {/* Value Bullets */}

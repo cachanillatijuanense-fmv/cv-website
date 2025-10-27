@@ -2,8 +2,8 @@
   "identity": {
     "name": "Fabián Matamoros Vindiola",
     "title": {
-      "es": "VP de Soluciones · Product Owner · Líder de Operaciones",
-      "en": "VP of Solutions · Product Owner · Operations Leader"
+      "es": "Líder de Soluciones y Operaciones — Estrategia, Procesos y Ejecución",
+      "en": "Solutions & Operations Leader — Strategy, Process, and Delivery"
     },
     "location": "Tijuana / San Diego",
     "contacts": {
@@ -29,12 +29,16 @@
   },
   "hero": {
     "headline": {
-      "es": "Diseño procesos, construyo sistemas y entreno equipos para ejecutar mejor.",
-      "en": "I design processes, build systems, and coach teams to execute better."
+      "es": "Fabián Matamoros Vindiola",
+      "en": "Fabián Matamoros Vindiola"
     },
     "subheadline": {
-      "es": "En la intersección entre liderazgo, procesos de negocio y tecnología — ahora con IA y low-code.",
-      "en": "At the intersection of leadership, business processes, and technology — now with AI and low-code."
+      "es": "Líder de Soluciones y Operaciones — Estrategia, Procesos y Ejecución",
+      "en": "Solutions & Operations Leader — Strategy, Process, and Delivery"
+    },
+    "subtitle": {
+      "es": "Uniendo estrategia y ejecución mediante diseño de procesos y liderazgo en entrega.",
+      "en": "Bridging strategy and execution through process design and delivery leadership."
     },
     "bullets": [
       {
@@ -140,8 +144,8 @@
     {
       "company": "TechCorp Solutions",
       "role": {
-        "es": "VP de Soluciones y Operaciones",
-        "en": "VP of Solutions and Operations"
+        "es": "Líder de Soluciones y Operaciones",
+        "en": "Solutions and Operations Leader"
       },
       "period": "2021 - Presente",
       "bullets": [
