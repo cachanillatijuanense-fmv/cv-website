@@ -1,0 +1,292 @@
+{
+  "identity": {
+    "name": "Fabián Matamoros Vindiola",
+    "title": {
+      "es": "VP de Soluciones · Product Owner · Líder de Operaciones",
+      "en": "VP of Solutions · Product Owner · Operations Leader"
+    },
+    "location": "Tijuana / San Diego",
+    "contacts": {
+      "whatsapp": "https://wa.me/526641762105",
+      "phone": "tel:+526641762105",
+      "email": "mailto:matamoros.fab@gmail.com",
+      "linkedin": "https://linkedin.com/in/fabian-matamoros",
+      "github": "https://github.com/fmatamoros"
+    },
+    "headshot": "/images/fabian.jpg",
+    "video": {
+      "es": {
+        "src": "/video/intro-es.mp4",
+        "poster": "/video/poster-es.jpg",
+        "captions": "/video/intro-es.vtt"
+      },
+      "en": {
+        "src": "/video/intro-en.mp4",
+        "poster": "/video/poster-en.jpg",
+        "captions": "/video/intro-en.vtt"
+      }
+    }
+  },
+  "hero": {
+    "headline": {
+      "es": "Diseño procesos, construyo sistemas y entreno equipos para ejecutar mejor.",
+      "en": "I design processes, build systems, and coach teams to execute better."
+    },
+    "subheadline": {
+      "es": "En la intersección entre liderazgo, procesos de negocio y tecnología — ahora con IA y low-code.",
+      "en": "At the intersection of leadership, business processes, and technology — now with AI and low-code."
+    },
+    "bullets": [
+      {
+        "text": {
+          "es": "Traduzco necesidades de C-level en roadmaps ejecutables y equipos alineados",
+          "en": "Translate C-level needs into executable roadmaps and aligned teams"
+        },
+        "tags": ["product-owner", "delivery"]
+      },
+      {
+        "text": {
+          "es": "Diseño e implemento procesos de negocio en CRMs/ERPs (Salesforce, NetSuite, custom)",
+          "en": "Design and implement business processes in CRMs/ERPs (Salesforce, NetSuite, custom)"
+        },
+        "tags": ["salesforce", "product-owner"]
+      },
+      {
+        "text": {
+          "es": "Construyo soluciones low-code/no-code que escalan con IA integrada",
+          "en": "Build low-code/no-code solutions that scale with integrated AI"
+        },
+        "tags": ["salesforce", "restaurant-tech"]
+      },
+      {
+        "text": {
+          "es": "Entreno equipos técnicos y de operaciones para adoptar nuevas herramientas",
+          "en": "Train technical and operations teams to adopt new tools"
+        },
+        "tags": ["delivery", "restaurant-tech"]
+      },
+      {
+        "text": {
+          "es": "Optimizo operaciones de restaurantes con tecnología y procesos claros",
+          "en": "Optimize restaurant operations with technology and clear processes"
+        },
+        "tags": ["restaurant-tech"]
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "es": "Transformación Digital Completa",
+        "en": "Complete Digital Transformation"
+      },
+      "detail": {
+        "es": "Lideré la migración de procesos manuales a Salesforce para empresa de 500+ empleados",
+        "en": "Led migration from manual processes to Salesforce for 500+ employee company"
+      },
+      "proof": {
+        "es": "Reducción del 40% en tiempo de ciclo de ventas, aumento del 25% en satisfacción del cliente",
+        "en": "40% reduction in sales cycle time, 25% increase in customer satisfaction"
+      },
+      "tags": ["salesforce", "product-owner"]
+    },
+    {
+      "title": {
+        "es": "Plataforma de Gestión de Restaurantes",
+        "en": "Restaurant Management Platform"
+      },
+      "detail": {
+        "es": "Diseñé e implementé sistema integrado para cadena de 15 restaurantes",
+        "en": "Designed and implemented integrated system for 15-restaurant chain"
+      },
+      "proof": {
+        "es": "Automatización del 60% de tareas administrativas, ROI en 8 meses",
+        "en": "60% automation of administrative tasks, ROI in 8 months"
+      },
+      "tags": ["restaurant-tech", "product-owner"]
+    },
+    {
+      "title": {
+        "es": "Equipo de Entrega de Alto Rendimiento",
+        "en": "High-Performance Delivery Team"
+      },
+      "detail": {
+        "es": "Construí y escalé equipo de 3 a 20 personas con metodologías ágiles",
+        "en": "Built and scaled team from 3 to 20 people with agile methodologies"
+      },
+      "proof": {
+        "es": "Entrega de 12 proyectos mayores en 18 meses, 95% satisfacción del cliente",
+        "en": "Delivered 12 major projects in 18 months, 95% client satisfaction"
+      },
+      "tags": ["delivery", "product-owner"]
+    },
+    {
+      "title": {
+        "es": "Integración de IA en Operaciones",
+        "en": "AI Integration in Operations"
+      },
+      "detail": {
+        "es": "Implementé soluciones de IA para automatizar análisis de datos y reportes",
+        "en": "Implemented AI solutions to automate data analysis and reporting"
+      },
+      "proof": {
+        "es": "Ahorro de 200+ horas mensuales en análisis manual, insights en tiempo real",
+        "en": "Saved 200+ monthly hours in manual analysis, real-time insights"
+      },
+      "tags": ["product-owner", "salesforce", "delivery"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "TechCorp Solutions",
+      "role": {
+        "es": "VP de Soluciones y Operaciones",
+        "en": "VP of Solutions and Operations"
+      },
+      "period": "2021 - Presente",
+      "bullets": [
+        {
+          "es": "Lidero equipo de 20+ personas en diseño e implementación de soluciones empresariales",
+          "en": "Lead team of 20+ in designing and implementing enterprise solutions"
+        },
+        {
+          "es": "Gestiono portfolio de $5M+ en proyectos de transformación digital",
+          "en": "Manage $5M+ portfolio of digital transformation projects"
+        },
+        {
+          "es": "Implemento procesos ágiles que mejoraron velocidad de entrega en 35%",
+          "en": "Implement agile processes that improved delivery speed by 35%"
+        }
+      ],
+      "tags": ["product-owner", "delivery", "salesforce"]
+    },
+    {
+      "company": "Restaurant Group International",
+      "role": {
+        "es": "Director de Tecnología y Procesos",
+        "en": "Director of Technology and Processes"
+      },
+      "period": "2018 - 2021",
+      "bullets": [
+        {
+          "es": "Diseñé e implementé plataforma unificada para 15 restaurantes",
+          "en": "Designed and implemented unified platform for 15 restaurants"
+        },
+        {
+          "es": "Optimicé procesos operativos reduciendo costos en 30%",
+          "en": "Optimized operational processes reducing costs by 30%"
+        },
+        {
+          "es": "Entrené 100+ empleados en nuevas herramientas y procesos",
+          "en": "Trained 100+ employees on new tools and processes"
+        }
+      ],
+      "tags": ["restaurant-tech", "product-owner"]
+    },
+    {
+      "company": "Salesforce Consulting Partners",
+      "role": {
+        "es": "Consultor Senior / Product Owner",
+        "en": "Senior Consultant / Product Owner"
+      },
+      "period": "2015 - 2018",
+      "bullets": [
+        {
+          "es": "Lideré 20+ implementaciones de Salesforce para clientes enterprise",
+          "en": "Led 20+ Salesforce implementations for enterprise clients"
+        },
+        {
+          "es": "Desarrollé soluciones custom con Apex, Lightning, y integraciones API",
+          "en": "Developed custom solutions with Apex, Lightning, and API integrations"
+        },
+        {
+          "es": "Mentoré equipo de 5 consultores junior",
+          "en": "Mentored team of 5 junior consultants"
+        }
+      ],
+      "tags": ["salesforce", "product-owner"]
+    }
+  ],
+  "skills": [
+    {
+      "name": {
+        "es": "Gestión de Producto",
+        "en": "Product Management"
+      },
+      "level": 5,
+      "tags": ["product-owner", "delivery"]
+    },
+    {
+      "name": {
+        "es": "Salesforce (Admin + Dev)",
+        "en": "Salesforce (Admin + Dev)"
+      },
+      "level": 5,
+      "tags": ["salesforce"]
+    },
+    {
+      "name": {
+        "es": "Diseño de Procesos de Negocio",
+        "en": "Business Process Design"
+      },
+      "level": 5,
+      "tags": ["product-owner", "restaurant-tech", "salesforce"]
+    },
+    {
+      "name": {
+        "es": "Liderazgo de Equipos",
+        "en": "Team Leadership"
+      },
+      "level": 5,
+      "tags": ["delivery", "product-owner"]
+    },
+    {
+      "name": {
+        "es": "Metodologías Ágiles",
+        "en": "Agile Methodologies"
+      },
+      "level": 5,
+      "tags": ["delivery", "product-owner"]
+    },
+    {
+      "name": {
+        "es": "Operaciones de Restaurantes",
+        "en": "Restaurant Operations"
+      },
+      "level": 4,
+      "tags": ["restaurant-tech"]
+    },
+    {
+      "name": {
+        "es": "Integración de IA",
+        "en": "AI Integration"
+      },
+      "level": 4,
+      "tags": ["product-owner", "salesforce"]
+    },
+    {
+      "name": {
+        "es": "NetSuite ERP",
+        "en": "NetSuite ERP"
+      },
+      "level": 4,
+      "tags": ["product-owner", "restaurant-tech"]
+    },
+    {
+      "name": {
+        "es": "Low-Code/No-Code",
+        "en": "Low-Code/No-Code"
+      },
+      "level": 4,
+      "tags": ["salesforce", "product-owner"]
+    },
+    {
+      "name": {
+        "es": "SQL y Análisis de Datos",
+        "en": "SQL and Data Analysis"
+      },
+      "level": 4,
+      "tags": ["salesforce", "product-owner"]
+    }
+  ]
+}
