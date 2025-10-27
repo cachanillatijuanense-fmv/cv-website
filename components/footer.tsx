@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin } from "lucide-react"
+import { Linkedin } from "lucide-react"
 import { CTAButtons } from "./cta-buttons"
 
 interface FooterProps {
@@ -31,17 +31,6 @@ export function Footer({ data, translations }: FooterProps) {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-6 w-6" />
-                </a>
-              )}
-              {data.identity.contacts.github && (
-                <a
-                  href={data.identity.contacts.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-6 w-6" />
                 </a>
               )}
             </div>
