@@ -1,0 +1,34 @@
+{
+  "achievements": {
+    "en": [
+      "Developed a **centralized financial control system** that unified all business units and replaced countless spreadsheets, enabling strategic analysis and delivering the first profitable month after ten consecutive losses.",
+      "Directed a **Salesforce–Sage Intacct integration** for a leading U.S. marketing company, automating financial workflows and boosting efficiency by over **35%**, securing a long-term Salesforce support partnership.",
+      "Led the **implementation of Salesforce Nonprofit Cloud** for a U.S.–based nonprofit organization, unifying grant tracking, program planning, and impact measurement with real-time dashboards.",
+      "Led **enterprise-level Salesforce and AI implementations** across U.S.–based organizations, adapting processes and integrating automation to improve operational efficiency.",
+      "Directed **digital transformation initiatives** that replaced manual workflows with custom software, reducing delivery cycles by up to **50%**.",
+      "Built and scaled **operational structures** from scratch at a customer service startup, transforming it into a stable, scalable BPO with standardized processes and training.",
+      "Promoted three times within **public administration**, culminating as Deputy Director of Urban Cleaning, where I led modernization of sanitation systems and a regulatory reform approved in **February 2016**.",
+      "Managed **cross-functional, bilingual teams** across Mexico and the U.S., aligning technical, operational, and client-facing efforts for consistent delivery and communication.",
+      "Drove early adoption of **AI-assisted development tools** (Cursor, Bolt.new, v0, Claude, DeepSeek) to deliver custom software faster and at lower cost.",
+      "Recognized for bridging **technical delivery and executive strategy**, aligning technology implementations with measurable business outcomes across sectors."
+    ],
+    "es": [
+      "Desarrolló un **sistema de control financiero centralizado** que unificó todas las unidades de negocio y reemplazó innumerables hojas de cálculo, habilitando análisis estratégico y logrando el **primer mes con utilidades tras diez pérdidas consecutivas**.",
+      "Dirigió una **integración Salesforce–Sage Intacct** para una importante empresa estadounidense de marketing, automatizando flujos financieros y aumentando la eficiencia en más de **35 %**, asegurando una alianza de soporte continuo en Salesforce.",
+      "Lideró la **implementación de Salesforce Nonprofit Cloud** para una organización sin fines de lucro en EE. UU., unificando seguimiento de grants, planeación de programas y medición de impacto con tableros en tiempo real.",
+      "Lideró **implementaciones empresariales de Salesforce y sistemas de IA** en organizaciones estadounidenses, adaptando procesos e integrando automatización para mejorar la eficiencia operativa.",
+      "Dirigió **iniciativas de transformación digital** que sustituyeron flujos manuales por software a medida, reduciendo los ciclos de entrega hasta en un **50 %**.",
+      "Diseñó y escaló **estructuras operativas** desde cero en una startup de atención al cliente, transformándola en una operación BPO estable y escalable con procesos y capacitación estandarizados.",
+      "Ascendido tres veces en la **administración pública**, culminando como Subdirector de Limpia, donde modernizó sistemas de saneamiento y lideró una reforma reglamentaria aprobada en **febrero de 2016**.",
+      "Coordinó **equipos bilingües y multifuncionales** entre México y EE. UU., alineando áreas técnicas, operativas y de cliente para una entrega consistente.",
+      "Impulsó la adopción temprana de **herramientas de desarrollo asistidas por IA** (Cursor, Bolt.new, v0, Claude, DeepSeek) para entregar software más rápido y a menor costo.",
+      "Reconocido por conectar **la entrega técnica con la estrategia ejecutiva**, alineando implementaciones tecnológicas con resultados medibles en diversos sectores."
+    ],
+    "title": {
+      "en": "Some Key Achievements",
+      "es": "Algunos Logros Clave"
+    }
+  }
+}
+
+
