@@ -5,6 +5,7 @@ import Image from "next/image"
 import type { Language } from "@/lib/i18n"
 // CTAs restored to left column; intro video moved below Hero in page layout
 import { Button } from "./ui/button"
+import { Mail, MessageCircle, Phone, MessageSquareText } from "lucide-react"
 
 interface HeroProps {
   data: any
@@ -52,6 +53,7 @@ export function Hero({ data, language, translations }: HeroProps) {
             <div className="pt-6 flex flex-wrap gap-3">
               <Button asChild variant="outline" size="lg">
                 <a href="#contact">
+                  <Mail className="h-4 w-4" />
                   {data.hero?.[language === "es" ? "cta_secondary_es" : "cta_secondary_en"] || translations.cta.contact}
                 </a>
               </Button>
@@ -62,6 +64,7 @@ export function Hero({ data, language, translations }: HeroProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <MessageCircle className="h-4 w-4" />
                     {data.hero?.[language === "es" ? "cta_whatsapp_es" : "cta_whatsapp_en"] || translations.cta.whatsapp}
                   </a>
                 </Button>
@@ -69,6 +72,7 @@ export function Hero({ data, language, translations }: HeroProps) {
               {data.hero?.phone_number && (
                 <Button asChild variant="outline" size="lg" className="bg-transparent">
                   <a href={`tel:${data.hero.phone_number}`}>
+                    <Phone className="h-4 w-4" />
                     {data.hero?.[language === "es" ? "cta_call_es" : "cta_call_en"] || translations.cta.phone}
                   </a>
                 </Button>
@@ -76,6 +80,7 @@ export function Hero({ data, language, translations }: HeroProps) {
               {data.hero?.sms_number && (
                 <Button asChild variant="outline" size="lg" className="bg-transparent">
                   <a href={`sms:${data.hero.sms_number}`}>
+                    <MessageSquareText className="h-4 w-4" />
                     {data.hero?.[language === "es" ? "cta_sms_es" : "cta_sms_en"] || "SMS"}
                   </a>
                 </Button>
