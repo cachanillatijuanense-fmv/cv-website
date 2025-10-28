@@ -8,18 +8,21 @@ export default function VideoIntro({ locale = "en" }: { locale?: "en" | "es" }) 
 
   return (
     <section id="intro-video" className="mx-auto max-w-5xl px-4 py-10">
+      {/* Design note: This video must preserve full aspect ratio and avoid any cropping.
+         We rely on the media's intrinsic ratio using width:100% and height:auto, and
+         avoid object-fit:cover to prevent trimming. See placement note in app/page.tsx. */}
       <h2 className="text-2xl font-semibold mb-4">
         {locale === "es" ? "Presentación" : "Introduction"}
       </h2>
 
-      <div className="rounded-2xl overflow-hidden shadow border">
+      <div className="rounded-2xl overflow-hidden shadow border bg-black">
         <video
           controls
           playsInline
           preload="metadata"
           poster={videoCfg.poster || undefined}
           aria-label={videoCfg.title || "Introduction video"}
-          className="w-full h-auto"
+          className="w-full h-auto object-contain block"
         >
           <source src={videoCfg.src} type="video/mp4" />
           {/* Optional: add WebM later

@@ -21,7 +21,33 @@ export function Achievements({ language, translations }: AchievementsProps) {
   const jsonTitle = (achievementsData as any)?.achievements?.title?.[language]
   const title = jsonTitle || (language === "es" ? "Algunos Logros Clave" : "Some Key Achievements")
   const [expanded, setExpanded] = useState(false)
-  const visibleItems = expanded ? items : items.slice(0, 5)
+  const featuredKeys = language === "es"
+    ? [
+        "Reconocido por conectar",
+        "Dirigió **implementaciones de software**",
+        "Desarrolló un **sistema de control financiero centralizado**",
+        "Coordinó **equipos bilingües y multifuncionales**",
+      ]
+    : [
+        "Recognized for bridging",
+        "Directed **software implementations**",
+        "Developed a **centralized financial control system**",
+        "Managed **cross-functional, bilingual teams**",
+      ]
+
+  const used = new Set<number>()
+  const featured: string[] = []
+  for (const key of featuredKeys) {
+    const idx = items.findIndex((txt) => txt.includes(key))
+    if (idx !== -1 && !used.has(idx)) {
+      used.add(idx)
+      featured.push(items[idx])
+    }
+  }
+  const rest = items.filter((_, i) => !used.has(i))
+  const orderedItems = [...featured, ...rest]
+  const defaultVisibleCount = featured.length || 5
+  const visibleItems = expanded ? orderedItems : orderedItems.slice(0, defaultVisibleCount)
 
   return (
     <section id="achievements" className="py-16 md:py-24">
@@ -53,7 +79,7 @@ export function Achievements({ language, translations }: AchievementsProps) {
               </motion.li>
             ))}
           </ul>
-          {items.length > 5 && (
+          {items.length > defaultVisibleCount && (
             <div className="mt-6 text-center">
               <Button variant="outline" onClick={() => setExpanded((v) => !v)}>
                 {expanded ? translations.skills.showLess : translations.skills.showAll}

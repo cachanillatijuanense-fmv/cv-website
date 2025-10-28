@@ -9,7 +9,7 @@ import toolsData from "@/content/tools.json"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Experience } from "@/components/experience"
-import { ContactForm } from "@/components/contact-form"
+// Replaced the contact form with a final callout message for simplicity
 import { Footer } from "@/components/footer"
 import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
@@ -48,12 +48,12 @@ export default function HomePage() {
       <main>
         <Hero data={siteData} language={language} translations={translations} />
 
+        {/* Intro video placed right after Hero per request for high visibility */}
+        <VideoIntro locale={language} />
+
         <About data={siteData} language={language} translations={translations} />
 
         <Achievements language={language} translations={translations} />
-
-        {/* Video intro appears only when content provides a source (English only for now) */}
-        <VideoIntro locale={language} />
 
         <Skills data={skillsData} translations={translations} />
 
@@ -61,7 +61,16 @@ export default function HomePage() {
 
         <Tools data={toolsData} translations={translations} />
 
-        <ContactForm translations={translations} />
+        {/* Final callout replacing the form; keeps #contact anchor for existing links */}
+        <section id="contact" className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                Let's work together
+              </h2>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer data={siteData} translations={translations} />

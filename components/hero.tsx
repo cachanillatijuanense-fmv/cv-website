@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import type { Language } from "@/lib/i18n"
-import { VideoIntro } from "./video-intro"
+// CTAs restored to left column; intro video moved below Hero in page layout
 import { Button } from "./ui/button"
 
 interface HeroProps {
@@ -15,7 +15,7 @@ interface HeroProps {
 export function Hero({ data, language, translations }: HeroProps) {
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-background sm:to-primary/5">
+    <section className="relative overflow-hidden bg-background sm:bg-gradient-to-br sm:from-background sm:via-background sm:to-primary/5">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-10 hidden sm:block">
         <Image src="/images/skyline.jpg" alt="" fill className="object-cover" priority />
@@ -48,6 +48,7 @@ export function Hero({ data, language, translations }: HeroProps) {
 
             {/* No role-based bullets in static version */}
 
+            {/* CTA buttons (restored to original location) */}
             <div className="pt-6 flex flex-wrap gap-3">
               <Button asChild size="lg">
                 <a href="/resume.pdf" target="_blank" rel="noopener">
@@ -106,10 +107,7 @@ export function Hero({ data, language, translations }: HeroProps) {
               />
             </div>
 
-            {/* Video Introduction */}
-            {false && data.identity?.video && (
-              <VideoIntro videoData={data.identity.video} language={language} translations={translations} />
-            )}
+            {/* CTAs moved back to left column; nothing below the image now */}
           </motion.div>
         </div>
       </div>
