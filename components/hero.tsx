@@ -50,11 +50,6 @@ export function Hero({ data, language, translations }: HeroProps) {
 
             {/* CTA buttons (restored to original location) */}
             <div className="pt-6 flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <a href="/resume.pdf" target="_blank" rel="noopener">
-                  {data.hero?.[language === "es" ? "cta_primary_es" : "cta_primary_en"] || translations.cta.contact}
-                </a>
-              </Button>
               <Button asChild variant="outline" size="lg">
                 <a href="#contact">
                   {data.hero?.[language === "es" ? "cta_secondary_es" : "cta_secondary_en"] || translations.cta.contact}
