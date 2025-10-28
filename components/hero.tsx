@@ -15,9 +15,9 @@ interface HeroProps {
 export function Hero({ data, language, translations }: HeroProps) {
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-background sm:to-primary/5">
       {/* Background Image */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 hidden sm:block">
         <Image src="/images/skyline.jpg" alt="" fill className="object-cover" priority />
       </div>
 

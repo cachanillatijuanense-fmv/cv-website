@@ -15,6 +15,7 @@ import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
 import { Tools } from "@/components/tools"
 import { Achievements } from "@/components/achievements"
+import VideoIntro from "@/components/VideoIntro"
 
 export default function HomePage() {
   const [language, setLanguage] = useState<Language>("en")
@@ -50,6 +51,9 @@ export default function HomePage() {
         <About data={siteData} language={language} translations={translations} />
 
         <Achievements language={language} translations={translations} />
+
+        {/* Video intro appears only when content provides a source (English only for now) */}
+        <VideoIntro locale={language} />
 
         <Skills data={skillsData} translations={translations} />
 

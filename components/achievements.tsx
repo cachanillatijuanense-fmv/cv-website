@@ -1,8 +1,10 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import type { Language } from "@/lib/i18n"
 import achievementsData from "@/content/achievements.json"
+import { Button } from "@/components/ui/button"
 
 interface AchievementsProps {
   language: Language
@@ -18,6 +20,8 @@ export function Achievements({ language, translations }: AchievementsProps) {
     (achievementsData as any)?.achievements?.[language] ?? []
   const jsonTitle = (achievementsData as any)?.achievements?.title?.[language]
   const title = jsonTitle || (language === "es" ? "Algunos Logros Clave" : "Some Key Achievements")
+  const [expanded, setExpanded] = useState(false)
+  const visibleItems = expanded ? items : items.slice(0, 5)
 
   return (
     <section id="achievements" className="py-16 md:py-24">
@@ -34,7 +38,7 @@ export function Achievements({ language, translations }: AchievementsProps) {
 
         <div className="max-w-4xl mx-auto">
           <ul className="list-disc ml-5 space-y-4">
-            {items.map((item, idx) => (
+            {visibleItems.map((item, idx) => (
               <motion.li
                 key={idx}
                 initial={{ opacity: 0, y: 10 }}
@@ -49,6 +53,13 @@ export function Achievements({ language, translations }: AchievementsProps) {
               </motion.li>
             ))}
           </ul>
+          {items.length > 5 && (
+            <div className="mt-6 text-center">
+              <Button variant="outline" onClick={() => setExpanded((v) => !v)}>
+                {expanded ? translations.skills.showLess : translations.skills.showAll}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>

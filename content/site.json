@@ -19,6 +19,14 @@
     "phone_number": "+526641762105",
     "sms_number": "+526641762105"
   },
+  "video": {
+    "en": {
+      "src": "/videos/intro-en.mp4",
+      "poster": "/videos/intro-en.jpg",
+      "title": "Introduction — Fabián Matamoros Vindiola"
+    },
+    "es": null
+  },
   "about": {
     "en": "Solutions & Operations Leader with over 15 years of experience driving organizational growth through technology, process design, and team leadership. Experienced in collaborating with U.S.–based companies across BPO, software development, and government sectors. Specialized in managing end-to-end technology implementations — from business analysis and system architecture to deployment and change management — including custom software built from scratch using AI-assisted development tools over the past three years. Focused on transforming business needs into scalable digital solutions, optimizing operations, and aligning cross-functional teams to deliver measurable results.",
     "es": "Líder en Soluciones y Operaciones con más de 15 años de experiencia impulsando el crecimiento organizacional a través de la tecnología, el diseño de procesos y el liderazgo de equipos. Ha colaborado con empresas de Estados Unidos dentro de los sectores BPO, desarrollo de software y gobierno. Especializado en la gestión integral de implementaciones tecnológicas — desde el análisis de negocio y la arquitectura del sistema hasta la puesta en marcha y gestión del cambio — incluyendo desarrollo de software a la medida con apoyo de herramientas basadas en inteligencia artificial durante los últimos tres años. Enfocado en transformar necesidades empresariales en soluciones digitales escalables, optimizar operaciones y alinear equipos multidisciplinarios para alcanzar resultados medibles."
