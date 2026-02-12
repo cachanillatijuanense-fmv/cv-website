@@ -1,11 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import type { Language } from "@/lib/i18n"
 // CTAs restored to left column; intro video moved below Hero in page layout
 import { Button } from "./ui/button"
-import { Mail, MessageCircle, Phone, MessageSquareText } from "lucide-react"
+import { Mail, MessageCircle, Phone, MessageSquareText, FileDown } from "lucide-react"
+import { generatePresentationLetterPdf, FILENAMES } from "@/lib/presentationLetterPdf"
 
 interface HeroProps {
   data: any
@@ -14,6 +16,24 @@ interface HeroProps {
 }
 
 export function Hero({ data, language, translations }: HeroProps) {
+  const [exportingPdf, setExportingPdf] = useState(false)
+
+  const handleExportPresentationLetter = async () => {
+    setExportingPdf(true)
+    try {
+      const blob = await generatePresentationLetterPdf(language)
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement("a")
+      a.href = url
+      a.download = FILENAMES[language]
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      console.error("Failed to generate PDF:", err)
+    } finally {
+      setExportingPdf(false)
+    }
+  }
 
   return (
     <section className="relative overflow-hidden bg-background sm:bg-gradient-to-br sm:from-background sm:via-background sm:to-primary/5">
@@ -85,6 +105,18 @@ export function Hero({ data, language, translations }: HeroProps) {
                   </a>
                 </Button>
               )}
+              <Button
+                variant="outline"
+                size="lg"
+                className="bg-transparent"
+                onClick={handleExportPresentationLetter}
+                disabled={exportingPdf}
+              >
+                <FileDown className="h-4 w-4" />
+                {exportingPdf
+                  ? (language === "es" ? "Generando…" : "Generating…")
+                  : translations?.hero?.exportPresentationLetter}
+              </Button>
             </div>
           </motion.div>
 
@@ -99,7 +131,7 @@ export function Hero({ data, language, translations }: HeroProps) {
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-20" />
               <Image
-                src="/images/fabian.jpg"
+                src="/images/fabian-new.png"
                 alt={data.hero?.name || "Profile"}
                 fill
                 className="object-cover rounded-full border-4 border-background shadow-2xl relative z-10"

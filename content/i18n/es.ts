@@ -16,6 +16,7 @@ export default {
     watchVideo: "Ver Introducción",
     videoES: "Español",
     videoEN: "Inglés",
+    exportPresentationLetter: "Exportar carta de presentación (PDF)",
   },
   sections: {
     highlights: "Logros Clave",
