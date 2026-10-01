@@ -131,9 +131,6 @@ The site includes:
 Replace placeholder assets in `/public`:
 - `/images/fabian.jpg` - Professional headshot
 - `/images/skyline.jpg` - Hero background image
-- `/video/intro-es.mp4` - Spanish introduction video
-- `/video/intro-en.mp4` - English introduction video
-- Video posters and caption files (.vtt)
 
 ## License
 

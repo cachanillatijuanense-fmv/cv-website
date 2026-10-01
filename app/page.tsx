@@ -15,7 +15,6 @@ import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
 import { Tools } from "@/components/tools"
 import { Achievements } from "@/components/achievements"
-import VideoIntro from "@/components/VideoIntro"
 
 export default function HomePage() {
   const [language, setLanguage] = useState<Language>("en")
@@ -47,9 +46,6 @@ export default function HomePage() {
 
       <main>
         <Hero data={siteData} language={language} translations={translations} />
-
-        {/* Intro video placed right after Hero per request for high visibility */}
-        <VideoIntro locale={language} />
 
         <About data={siteData} language={language} translations={translations} />
 

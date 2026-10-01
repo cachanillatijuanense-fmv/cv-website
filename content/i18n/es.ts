@@ -13,9 +13,6 @@ export default {
     contact: "Contáctame",
   },
   hero: {
-    watchVideo: "Ver Introducción",
-    videoES: "Español",
-    videoEN: "Inglés",
     exportPresentationLetter: "Exportar carta de presentación (PDF)",
   },
   sections: {

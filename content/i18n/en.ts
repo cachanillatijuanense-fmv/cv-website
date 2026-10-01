@@ -13,9 +13,6 @@ export default {
     contact: "Get in Touch",
   },
   hero: {
-    watchVideo: "Watch Introduction",
-    videoES: "Spanish",
-    videoEN: "English",
     exportPresentationLetter: "Export Presentation Letter (PDF)",
   },
   sections: {
