@@ -33,7 +33,7 @@ const KAPPA = 0.552284749831
 export const LETTER_TEXT = {
   en: `Hello,
 
-I'm Fabián Matamoros Vindiola, an operations and technology leader with 15+ years of experience turning complex business challenges into clear processes and working software. In my current role as VP of Solutions at ArkusNexus, I lead cross-functional delivery as a PM/PO across Salesforce implementations, internal management platforms, and enterprise AI initiatives—ensuring measurable outcomes, predictable execution, and strong stakeholder alignment.
+I'm Fabián Matamoros Vindiola, an operations and technology leader with 20+ years of experience turning complex business challenges into clear processes and working software. In my current role as VP of Solutions at ArkusNexus, I lead cross-functional delivery as a PM/PO across Salesforce implementations, internal management platforms, and enterprise AI initiatives—ensuring measurable outcomes, predictable execution, and strong stakeholder alignment.
 
 I specialize in applying AI and low-code tools (v0, Cursor, Bolt.new) to accelerate prototyping and delivery, while pairing them with disciplined process design, QA, training systems, and automation (Zapier, n8n). I'm comfortable across cloud deployment (Netlify/Vercel) and data stacks (Neon/Postgres, Supabase), and I work fluently in English and Spanish with teams across North and Latin America.
 
@@ -45,7 +45,7 @@ Fabián Matamoros Vindiola`,
 
   es: `Hola:
 
-Soy Fabián Matamoros Vindiola, líder en operaciones y tecnología con más de 15 años convirtiendo retos complejos en procesos claros y software funcional. Actualmente, como VP of Solutions en ArkusNexus, lidero la entrega como PM/PO en implementaciones de Salesforce, plataformas internas de gestión e iniciativas de IA a nivel empresa, asegurando resultados medibles, ejecución predecible y alineación con stakeholders.
+Soy Fabián Matamoros Vindiola, líder en operaciones y tecnología con más de 20 años convirtiendo retos complejos en procesos claros y software funcional. Actualmente, como VP of Solutions en ArkusNexus, lidero la entrega como PM/PO en implementaciones de Salesforce, plataformas internas de gestión e iniciativas de IA a nivel empresa, asegurando resultados medibles, ejecución predecible y alineación con stakeholders.
 
 Me especializo en aplicar IA y herramientas low-code (v0, Cursor, Bolt.new) para acelerar prototipos y entrega, combinándolas con diseño de procesos, QA, sistemas de capacitación y automatización (Zapier, n8n). También tengo experiencia en despliegue en la nube (Netlify/Vercel) y en stacks de datos (Neon/Postgres, Supabase). Trabajo fluidamente en español e inglés con equipos en Norte y Latinoamérica.
 

@@ -23,10 +23,13 @@ export function LanguageSwitcher({ onLanguageChange }: LanguageSwitcherProps) {
     onLanguageChange(newLang)
   }
 
+  // Show the language the button will switch to, not the current one
+  const targetLabel = currentLang === "en" ? "ESPAÑOL" : "ENGLISH"
+
   return (
     <Button variant="ghost" size="sm" onClick={toggleLanguage} className="gap-2" aria-label="Toggle language">
       <Globe className="h-4 w-4" />
-      <span className="font-medium">{currentLang.toUpperCase()}</span>
+      <span className="font-medium">{targetLabel}</span>
     </Button>
   )
 }

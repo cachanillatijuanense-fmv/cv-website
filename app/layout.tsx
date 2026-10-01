@@ -6,25 +6,22 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 export const metadata: Metadata = {
-  title: "Fabián Matamoros Vindiola — Solutions & Operations Leader",
-  description:
-    "Solutions & Operations Leader — Strategy, Process, and Delivery. Experienced with U.S.-based companies across BPO and software; recent years accelerating delivery through AI-assisted development.",
+  title: "Fabián Matamoros Vindiola — Operations Leader | Process, Systems and Delivery",
+  description: "Operations leader with 20+ years building the systems that make companies execute, across BPO, software delivery, restaurants, and public administration. Process design, performance systems, CRM implementation, and AI-assisted automation. Bilingual English and Spanish.",
   openGraph: {
-    title: "Fabián Matamoros Vindiola — Solutions & Operations Leader",
-    description:
-      "Operations & technology leadership; end-to-end implementations and AI-assisted delivery.",
+    title: "Fabián Matamoros Vindiola — Operations Leader | Process, Systems and Delivery",
+    description: "Operations leader with 20+ years building the systems that make companies execute, across BPO, software delivery, restaurants, and public administration. Process design, performance systems, CRM implementation, and AI-assisted automation. Bilingual English and Spanish.",
     type: "profile",
     locale: "en_US",
     url: "https://fmv-cv-website.netlify.app/",
     siteName: "Fabián Matamoros Vindiola CV",
-    images: ["/og-image.jpg"],
+    images: ["https://fmv-cv-website.netlify.app/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fabián Matamoros Vindiola — Solutions & Operations Leader",
-    description:
-      "Operations & technology leadership; end-to-end implementations and AI-assisted delivery.",
-    images: ["/og-image.jpg"],
+    title: "Fabián Matamoros Vindiola — Operations Leader | Process, Systems and Delivery",
+    description: "Operations leader with 20+ years building the systems that make companies execute, across BPO, software delivery, restaurants, and public administration. Process design, performance systems, CRM implementation, and AI-assisted automation. Bilingual English and Spanish.",
+    images: ["https://fmv-cv-website.netlify.app/og-image.jpg"],
   },
     generator: 'v0.app'
 }

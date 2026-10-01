@@ -23,16 +23,14 @@ export function About({ data, language, translations }: AboutProps) {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About</h2>
           <p className="text-lg text-muted-foreground whitespace-pre-line">{text}</p>
-          {/* Placement rationale: Show structured bio facts (age, degree) at the end so
+          {/* Placement rationale: Show structured bio facts (degree) at the end so
              narrative flows first, followed by quick-reference details. */}
           {language === "es" ? (
             <div className="mt-4 space-y-1">
-              <p className="text-lg text-muted-foreground">Edad: 44</p>
               <p className="text-lg text-muted-foreground">Grado: Ingeniería en Electrónica Médica - Universidad Autónoma de Guadalajara (2000-2005)</p>
             </div>
           ) : (
             <div className="mt-4 space-y-1">
-              <p className="text-lg text-muted-foreground">Age: 44</p>
               <p className="text-lg text-muted-foreground">Degree: Medical Electronics Engineering - Universidad Autonoma de Guadalajara (2000-2005)</p>
             </div>
           )}
