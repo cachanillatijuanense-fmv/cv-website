@@ -1,22 +1,26 @@
 {
   "recent": [
     {
-      "company": "IMPEL Consulting (part of ArkusNexus)",
-      "role": "VP of Solutions",
+      "company": "ArkusNexus (IMPEL Consulting and ScaleWise divisions)",
+      "role": "Chief Delivery Officer, ScaleWise | VP of Solutions, IMPEL Consulting",
       "period": "2024 – Present",
       "bullets_en": [
-        "Lead software development and delivery teams for enterprise systems, Salesforce implementations, and custom AI-driven applications.",
-        "Define project strategies and oversee execution across ArkusNexus’ consulting ecosystem, ensuring alignment with U.S. client objectives.",
-        "Direct recruitment and allocation of both permanent consultants and freelancers within IMPEL Consulting (not across Arkus overall), balancing capacity with project demands.",
-        "Manage process design, agile delivery, and cross-functional collaboration across multiple departments.",
-        "Drive innovation by integrating AI-assisted development tools to accelerate delivery and improve solution quality."
+        "Launched ScaleWise, a nearshore operations consultancy, from zero to roughly $319K USD in annual recurring revenue in ten months at about 50 percent margin, building the go-to-market, pricing model, outbound strategy, and client delivery",
+        "Kept four active IMPEL Salesforce implementations and a managed-services contract delivering after the division lost its CEO and nearly all staff, rebuilding capacity through a vetted freelance bench and personally carrying requirements gathering and solution architecture on two greenfield builds",
+        "Led a complex billing enhancement on an existing Salesforce org where a prior vendor had failed after two years, designing the calculation logic so the billing structure matched how the client's operations actually ran; deployed to production and closed as a success at the client's own assessment",
+        "Converted the managed-services account into a renewal running through February 2027 at roughly 85 percent margin",
+        "Turned around a restaurant operation from sustained losses to profitability in six months: standardized kitchen procedures, rebuilt pricing on a true cost basis, and replaced spreadsheets with a financial control system still in daily use a year later",
+        "Scoped and led an eight-month build of a permission-governed document intelligence platform, directing the development team end to end",
+        "Designed and deployed a knowledge layer for associates embedded in a client operation, diagnosing the problem as retrieval rather than documentation and reading the client's live documentation at query time instead of mirroring it, which removed several hundred hours of curation and the maintenance burden of a copy; validated across three rounds of testing against real work before deployment"
       ],
       "bullets_es": [
-        "Lidera equipos de desarrollo y entrega para sistemas empresariales, implementaciones de Salesforce y aplicaciones a la medida impulsadas por IA.",
-        "Define estrategias y supervisa la ejecución dentro del ecosistema de consultoría de ArkusNexus, alineado con objetivos de clientes en EE. UU.",
-        "Dirige el reclutamiento y asignación de consultores permanentes y freelancers dentro de IMPEL Consulting (no a nivel Arkus completo), equilibrando capacidad vs. demanda de proyectos.",
-        "Gestiona diseño de procesos, entregas ágiles y colaboración multidisciplinaria.",
-        "Impulsa la adopción de herramientas de desarrollo asistidas por IA para acelerar entregas y elevar la calidad."
+        "Lancé ScaleWise, una consultora de operaciones nearshore, de cero a aproximadamente $319K USD en ingresos recurrentes anuales en diez meses, con un margen cercano al 50 por ciento, construyendo la estrategia de salida al mercado, el modelo de precios, la estrategia de prospección y la entrega al cliente",
+        "Mantuve en marcha cuatro implementaciones activas de Salesforce de IMPEL y un contrato de servicios administrados después de que la división perdiera a su CEO y a casi todo su personal, reconstruyendo capacidad con una red de freelancers evaluados y encargándome personalmente del levantamiento de requerimientos y de la arquitectura de la solución en dos desarrollos desde cero",
+        "Lideré una mejora compleja de facturación en una org de Salesforce existente donde un proveedor anterior había fracasado tras dos años, diseñando la lógica de cálculo para que la estructura de facturación reflejara cómo operaba realmente el cliente; desplegada a producción y cerrada como un éxito a juicio del propio cliente",
+        "Convertí la cuenta de servicios administrados en una renovación vigente hasta febrero de 2027, con un margen aproximado de 85 por ciento",
+        "Llevé una operación de restaurante de pérdidas sostenidas a la rentabilidad en seis meses: estandaricé los procedimientos de cocina, reconstruí los precios sobre una base de costo real y reemplacé las hojas de cálculo con un sistema de control financiero que sigue en uso diario un año después",
+        "Definí el alcance y lideré el desarrollo de ocho meses de una plataforma de inteligencia documental con gobierno de permisos, dirigiendo al equipo de desarrollo de principio a fin",
+        "Diseñé y puse en operación una capa de conocimiento para asociados integrados en la operación de un cliente, diagnosticando el problema como de recuperación y no de documentación, y leyendo la documentación viva del cliente al momento de la consulta en lugar de replicarla, lo que eliminó varios cientos de horas de curaduría y la carga de mantenimiento de una copia; validada en tres rondas de pruebas contra trabajo real antes de su despliegue"
       ]
     },
     {
@@ -24,35 +28,35 @@
       "role": "General Director",
       "period": "2021 – 2023",
       "bullets_en": [
-        "Served as the company’s first General Director, establishing its operational and administrative foundations.",
-        "Oversaw recruitment, training, and development for operational and administrative teams.",
-        "Defined and optimized processes for quality assurance, performance tracking, and client communication.",
-        "Introduced automation and analytics systems to improve efficiency and visibility.",
-        "Managed strategic negotiations with clients and vendors; represented the company in executive-level presentations."
+        "Launched and ran a bilingual BPO from zero, growing to 27 agents and roughly $850K USD in annual recurring revenue across 9 US client accounts in two years",
+        "Reached profitability at approximately 6 agents by engineering a lean cost structure: scouted 15 sites to secure a lease with utilities bundled, and structured client agreements so clients carried platform and systems costs",
+        "Owned the full commercial cycle, sourcing leads through partner channels, presenting proposals, and closing accounts across customer service, tech support, appointment setting, and sales support",
+        "Built the recruitment and onboarding function from scratch, holding attrition to 25 to 30 percent in a Tijuana BPO market where turnover runs far higher",
+        "Advised early-stage client companies on their own operational design, extending the engagement beyond contracted scope"
       ],
       "bullets_es": [
-        "Primer Director General de la empresa; creó y consolidó estructuras operativas y administrativas.",
-        "Supervisó reclutamiento, capacitación y desarrollo de equipos operativos y administrativos.",
-        "Definió y optimizó procesos de calidad, métricas de desempeño y comunicación con clientes.",
-        "Implementó automatización y analítica para mejorar eficiencia y visibilidad.",
-        "Condujo negociaciones estratégicas y representó a la empresa ante ejecutivos y socios."
+        "Lancé y dirigí un BPO bilingüe desde cero, hasta llegar a 27 agentes y aproximadamente $850K USD en ingresos recurrentes anuales con 9 cuentas de clientes en Estados Unidos en dos años",
+        "Alcancé la rentabilidad con aproximadamente 6 agentes al diseñar una estructura de costos ligera: recorrí 15 ubicaciones para asegurar un arrendamiento con servicios incluidos y estructuré los acuerdos con clientes para que ellos asumieran los costos de plataforma y sistemas",
+        "Me hice cargo del ciclo comercial completo: generación de prospectos mediante canales de socios, presentación de propuestas y cierre de cuentas en servicio al cliente, soporte técnico, agendamiento de citas y soporte de ventas",
+        "Construí desde cero la función de reclutamiento e incorporación, manteniendo la rotación entre 25 y 30 por ciento en un mercado de BPO en Tijuana donde la cifra suele ser mucho mayor",
+        "Asesoré a empresas clientes en etapa temprana sobre el diseño de sus propias operaciones, más allá del alcance contratado"
       ]
     },
     {
       "company": "Baja Call Center",
-      "role": "Training & Quality Manager (GUESS Campaign) — promoted from Sales Training Instructor",
+      "role": "Training & Quality Manager (GUESS Campaign) | promoted from Sales Training Instructor",
       "period": "2018 – 2021",
       "bullets_en": [
-        "Designed and implemented training programs for sales and customer-service teams in alignment with client standards.",
-        "Supervised quality-control teams to ensure consistent performance and compliance.",
-        "Built reporting frameworks to evaluate training outcomes and service quality.",
-        "Maintained direct communication with U.S. corporate clients to align objectives and outcomes."
+        "Raised weekly CSAT from 82 percent to a sustained average above 90 percent by rebuilding the quality assurance function on the company's largest client account",
+        "Diagnosed the root cause as unenforced evaluation cadence and vague scoring criteria; standardized the scorecard with the client's QA leadership, built a weekly schedule that made full coverage achievable, and restored the agent feedback loop that had collapsed under incomplete grading",
+        "Designed a two-week onboarding program covering brand standards, systems, escalation thresholds, and customer communication; delivered it to 15 cohorts, roughly 250 to 300 agents",
+        "Established a biweekly executive reporting cadence with the client, credited with repairing an at-risk account relationship"
       ],
       "bullets_es": [
-        "Diseñó e implementó programas de capacitación para ventas y atención al cliente alineados a estándares del cliente.",
-        "Dirigió equipos de control de calidad, asegurando cumplimiento y consistencia operativa.",
-        "Construyó marcos de reporte para medir impacto de la capacitación y calidad del servicio.",
-        "Mantuvo comunicación directa con corporativo en EE. UU. para alinear objetivos y resultados."
+        "Elevé el CSAT semanal de 82 por ciento a un promedio sostenido arriba de 90 por ciento al reconstruir la función de aseguramiento de calidad en la cuenta más grande de la empresa",
+        "Identifiqué como causa raíz una cadencia de evaluación que no se cumplía y criterios de calificación ambiguos; estandaricé la hoja de evaluación con el liderazgo de calidad del cliente, construí un calendario semanal que hizo alcanzable la cobertura total y restablecí el ciclo de retroalimentación a los agentes, que se había roto por calificaciones incompletas",
+        "Diseñé un programa de incorporación de dos semanas que cubría estándares de marca, sistemas, umbrales de escalamiento y comunicación con el cliente final; lo impartí a 15 generaciones, aproximadamente 250 a 300 agentes",
+        "Establecí una cadencia de reportes ejecutivos cada dos semanas con el cliente, a la que se atribuye haber recuperado una relación de cuenta en riesgo"
       ]
     }
   ],
@@ -62,93 +66,44 @@
       "role": "Co-propietario y Gerente de Operaciones",
       "period": "2016 – 2019",
       "bullets_es": [
-        "Operación diaria, finanzas y marketing en negocio de hospitalidad.",
-        "Sistemas de control para inventarios, costos y ventas.",
-        "Reclutamiento, capacitación y evaluación de desempeño.",
-        "Branding y publicidad para posicionamiento local."
+        "Fundé y dirigí una cafetería de café orgánico de comercio justo, a cargo de la selección del local, las compras, los precios, el inventario, el marketing y la contratación del personal, y redacté los manuales de operación y los estándares de servicio con los que se capacitó a todo el equipo",
+        "Cerré el negocio tras dos años y medio, con la selección del local y las restricciones de acceso manteniéndolo por debajo del punto de equilibrio, y transferí el modelo operativo y el equipo a un negocio de café sucesor que opera sin interrupción desde 2019"
       ],
       "bullets_en": [
-        "Managed daily operations, finances, and marketing for a hospitality business.",
-        "Implemented control systems for inventory, cost, and sales management.",
-        "Supervised hiring, training, and performance evaluation.",
-        "Directed branding and advertising strategies for local positioning."
+        "Founded and ran an organic fair-trade coffee shop, owning site selection, purchasing, pricing, inventory, marketing, and staffing, and wrote the operations manuals and service standards used to train all staff",
+        "Closed the business after two and a half years, with site selection and access constraints keeping it below breakeven, and transferred the operating model and equipment to a successor coffee business running continuously since 2019"
       ]
     },
     {
       "company": "City of Tijuana",
-      "role": "Deputy Director of Urban Cleaning — promoted from Chief Inspector (Public Services) and Assistant Director (Youth Institute)",
+      "role": "Deputy Director of Urban Cleaning | promoted from Chief Inspector (Public Services) and Assistant Director (Youth Institute)",
       "period": "2010 – 2016",
       "bullets_en": [
-        "Designed and implemented citywide cleaning and waste-collection programs.",
-        "Supervised municipal inspection teams and enforced urban regulations.",
-        "Led a regulatory reform for the City’s Cleaning Ordinance, improving efficiency and compliance.",
-        "Collaborated with civil-society organizations to optimize environmental initiatives."
+        "Directed a 700+ person workforce across household collection, street cleaning, and inspection, the city's second-largest department after police",
+        "Authored and drove the reform of the city's cleaning ordinance through to passage by the mayor and city council, running interdepartmental drafting, legal review, council briefings, and business-community consultation",
+        "Rebuilt the inspection function from 3 inspectors issuing roughly 10 citations per month to an 11-person team issuing 400 to 450, on a self-funding business case approved by council",
+        "Redesigned the citation instrument after finding fines were being overturned by the administrative tribunal on procedural grounds, making enforcement legally defensible",
+        "Diagnosed chronic collection-schedule failures as a fleet capacity problem and recovered roughly a day of schedule slippage per week, returning Sundays to crews who had been working seven days",
+        "Built and launched a licensing program bringing unregulated private commercial waste haulers into a permitted framework"
       ],
       "bullets_es": [
-        "Diseño/implementación de programas de limpieza y recolección a nivel ciudad.",
-        "Supervisión de inspectores municipales y cumplimiento normativo.",
-        "Reforma del Reglamento de Limpia para eficiencia y cumplimiento.",
-        "Colaboración con organizaciones civiles para optimizar iniciativas ambientales."
+        "Dirigí una plantilla de más de 700 personas en recolección domiciliaria, barrido de calles e inspección, la segunda dirección más grande de la ciudad después de policía",
+        "Redacté e impulsé la reforma del Reglamento de Limpia de la ciudad hasta su aprobación por el presidente municipal y el cabildo, coordinando la redacción interdepartamental, la revisión jurídica, las sesiones informativas con el cabildo y la consulta con el sector empresarial",
+        "Reconstruí la función de inspección, de 3 inspectores que emitían aproximadamente 10 infracciones al mes a un equipo de 11 personas que emitía de 400 a 450, con un caso de negocio autofinanciable aprobado por el cabildo",
+        "Rediseñé el formato de infracción tras descubrir que el tribunal administrativo anulaba multas por razones de procedimiento, lo que hizo la aplicación jurídicamente defendible",
+        "Identifiqué que las fallas crónicas en el calendario de recolección eran un problema de capacidad de flotilla y recuperé aproximadamente un día de retraso semanal, devolviendo los domingos a cuadrillas que trabajaban siete días",
+        "Construí y lancé un programa de licencias que integró a un marco con permisos a los recolectores privados de residuos comerciales que operaban sin regulación"
       ]
     },
     {
       "company": "Plantronics México",
-      "role": "Escalation Specialist & Training Lead — promoted from Technical Support Agent",
+      "role": "Escalation Specialist & Training Lead | promoted from Technical Support Agent",
       "period": "2008 – 2010",
       "bullets_en": [
-        "Provided advanced technical support and resolved escalated customer cases for U.S. markets.",
-        "Trained new agents in troubleshooting and client communication.",
-        "Delivered MCDST training and standardized support processes.",
-        "Improved documentation and knowledge base usage across teams."
+        "Handled escalated technical support for U.S. markets and led agent training on troubleshooting and customer communication"
       ],
       "bullets_es": [
-        "Soporte técnico avanzado y resolución de casos escalados para el mercado de EE. UU.",
-        "Capacitación a nuevos agentes en troubleshooting y comunicación.",
-        "Entrenamiento MCDST y estandarización de procesos de soporte.",
-        "Mejora de documentación y uso de knowledge base a nivel equipo."
-      ]
-    },
-    {
-      "company": "Vinequimed",
-      "role": "Fundador y Especialista Biomédico",
-      "period": "2006 – 2010",
-      "bullets_es": [
-        "Mantenimiento preventivo/correctivo de equipo médico (sector público/privado).",
-        "Capacitación a personal de salud en uso seguro y eficiente.",
-        "Gestión de contratos, clientes y operación en sitio."
-      ],
-      "bullets_en": [
-        "Preventive/corrective maintenance of medical equipment for public and private institutions.",
-        "Training for healthcare personnel in safe and efficient equipment use.",
-        "Managed contracts, client relationships, and on-site operations."
-      ]
-    },
-    {
-      "company": "Hospital Ángeles Tijuana (Grupo Ángeles)",
-      "role": "Jefe de Ingeniería Biomédica",
-      "period": "2005 – 2006",
-      "bullets_es": [
-        "Programa de soporte biomédico; compra e instalación de equipo crítico.",
-        "Capacitación a personal médico/paramédico en operación y mantenimiento."
-      ],
-      "bullets_en": [
-        "Biomedical support program; procurement and installation of critical medical equipment.",
-        "Training for medical and paramedical staff in operation and maintenance."
-      ]
-    },
-    {
-      "company": "Hospitales Puerta de Hierro",
-      "role": "Ingeniero Biomédico → Jefe de Adquisición de Equipo Médico",
-      "period": "2003 – 2005",
-      "bullets_es": [
-        "Supervisión de instalación de equipos durante la construcción.",
-        "Adquisición de dispositivos e infraestructura técnica.",
-        "Puesta en marcha de procesos administrativos y de ingeniería."
-      ],
-      "bullets_en": [
-        "Supervised equipment installation during hospital construction.",
-        "Managed procurement for medical devices and technical infrastructure.",
-        "Set up administrative and engineering processes during opening."
+        "Atendí soporte técnico escalado para mercados de EE. UU. y lideré la capacitación de agentes en resolución de problemas y comunicación con el cliente"
       ]
     },
     {
@@ -156,12 +111,43 @@
       "role": "Profesor (Matemáticas, Física y Biología)",
       "period": "2007 – 2008",
       "bullets_es": [
-        "Desarrollo e impartición de currícula STEM.",
-        "Fomento del pensamiento crítico y resolución de problemas."
+        "Impartí clases de matemáticas, física y biología mientras dirigía Vinequimed"
       ],
       "bullets_en": [
-        "Developed and taught STEM curricula.",
-        "Fostered analytical thinking and problem-solving."
+        "Taught mathematics, physics, and biology while running Vinequimed"
+      ]
+    },
+    {
+      "company": "Vinequimed",
+      "role": "Fundador y Especialista Biomédico",
+      "period": "2006 – 2010",
+      "bullets_es": [
+        "Fundé y dirigí una empresa de mantenimiento de equipo médico que atendía a hospitales y clínicas de Baja California, a cargo de los contratos, las renovaciones y la capacitación del personal clínico"
+      ],
+      "bullets_en": [
+        "Founded and ran a medical equipment maintenance company serving hospitals and clinics across Baja California, owning contracts, renewals, and clinical staff training"
+      ]
+    },
+    {
+      "company": "Hospital Ángeles Tijuana (Grupo Ángeles)",
+      "role": "Jefe de Ingeniería Biomédica",
+      "period": "2005 – 2006",
+      "bullets_es": [
+        "Establecí el programa de ingeniería biomédica desde la apertura, lideré la adquisición de equipo y conformé el equipo técnico"
+      ],
+      "bullets_en": [
+        "Established the biomedical engineering program at launch, led equipment procurement, and built the technical team"
+      ]
+    },
+    {
+      "company": "Hospitales Puerta de Hierro",
+      "role": "Ingeniero Biomédico → Jefe de Adquisición de Equipo Médico",
+      "period": "2003 – 2005",
+      "bullets_es": [
+        "Dirigí la adquisición de equipo médico desde la investigación hasta la negociación con proveedores nacionales e internacionales, y supervisé la puesta en servicio de la obra"
+      ],
+      "bullets_en": [
+        "Ran medical equipment procurement from research through negotiation with national and international vendors, and supervised construction commissioning"
       ]
     }
   ]
