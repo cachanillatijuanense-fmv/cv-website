@@ -14,7 +14,6 @@ import { Footer } from "@/components/footer"
 import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
 import { Tools } from "@/components/tools"
-import { Achievements } from "@/components/achievements"
 
 export default function HomePage() {
   const [language, setLanguage] = useState<Language>("en")
@@ -48,8 +47,6 @@ export default function HomePage() {
         <Hero data={siteData} language={language} translations={translations} />
 
         <About data={siteData} language={language} translations={translations} />
-
-        <Achievements language={language} translations={translations} />
 
         <Skills data={skillsData} translations={translations} />
 

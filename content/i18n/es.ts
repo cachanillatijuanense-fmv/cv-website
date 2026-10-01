@@ -34,10 +34,6 @@ export default {
     expand: "Ver detalles",
     collapse: "Ocultar detalles",
   },
-  skills: {
-    showAll: "Ver todas las habilidades",
-    showLess: "Ver habilidades principales",
-  },
   contact: {
     title: "Trabajemos Juntos",
     subtitle: "Disponible para consultoría, roles full-time, o proyectos específicos.",

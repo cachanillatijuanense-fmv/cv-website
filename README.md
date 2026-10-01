@@ -93,7 +93,6 @@ Edit `content/site.json` to update:
 - Personal information
 - Experience entries
 - Skills and expertise
-- Highlights and achievements
 
 ### Translations
 

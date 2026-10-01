@@ -34,10 +34,6 @@ export default {
     expand: "Show details",
     collapse: "Hide details",
   },
-  skills: {
-    showAll: "Show all skills",
-    showLess: "Show top skills",
-  },
   contact: {
     title: "Let's Work Together",
     subtitle: "I'm available for consulting, full-time roles, or project-based work.",
