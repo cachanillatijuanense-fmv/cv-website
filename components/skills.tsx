@@ -23,7 +23,7 @@ export function Skills({ data, translations }: SkillsProps) {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{translations.sections.skills}</h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto grid gap-6 md:grid-cols-2">
+        <div className="max-w-4xl mx-auto grid gap-x-12 gap-y-10 md:grid-cols-2">
           {categories.map(([category, items], idx) => (
             <motion.div
               key={category}
@@ -31,14 +31,11 @@ export function Skills({ data, translations }: SkillsProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: idx * 0.05 }}
-              className="bg-background rounded-lg border p-5"
             >
-              <h3 className="font-semibold mb-3">{category}</h3>
-              <ul className="flex flex-wrap gap-2">
+              <h3 className="text-xl font-semibold mb-3">{category}</h3>
+              <ul className="list-disc ml-5 space-y-1.5 marker:text-muted-foreground text-muted-foreground">
                 {items.map((skill) => (
-                  <li key={skill} className="px-2.5 py-1 rounded-full bg-muted text-sm border">
-                    {skill}
-                  </li>
+                  <li key={skill}>{skill}</li>
                 ))}
               </ul>
             </motion.div>
