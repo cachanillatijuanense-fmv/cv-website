@@ -18,6 +18,8 @@ export default {
   sections: {
     highlights: "Key Achievements",
     experience: "Experience",
+    writing: "Writing",
+    getInTouch: "Get in touch",
     skills: "Skills & Expertise",
     tools: "Tools",
     contact: "Contact Me",

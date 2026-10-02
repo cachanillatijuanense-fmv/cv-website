@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "title": "The industry changes. The operational patterns usually don't.",
+      "url": "https://www.linkedin.com/pulse/industry-changes-operational-patterns-usually-dont-what-matamoros-fb8wc/",
+      "description_en": "A hospital does not run like a BPO, and a city services department does not run like a coffee shop. But the handoff failures, the accountability gaps, and the systems that stopped matching reality all look familiar. On what transfers across industries and where pattern recognition stops.",
+      "description_es": "Un hospital no opera como un BPO, y una dirección de servicios públicos no opera como una cafetería. Pero las fallas en los traspasos, los vacíos de responsabilidad y los sistemas que dejaron de reflejar la realidad se parecen mucho. Sobre lo que se transfiere entre industrias y dónde termina el reconocimiento de patrones."
+    },
+    {
+      "title": "Most operational problems are misdiagnosed",
+      "url": "https://www.linkedin.com/pulse/most-operational-problems-misdiagnosed-fabian-matamoros-lzdoc/",
+      "description_en": "Companies feel the friction and respond to it: add people, buy a tool, tighten the process. Often the real failure is somewhere else, and the fix just gives the problem a better interface. On the gap between knowing something is wrong and knowing what is wrong.",
+      "description_es": "Las empresas sienten la fricción y reaccionan a ella: contratar más gente, comprar una herramienta, apretar el proceso. Muchas veces la falla real está en otro lado, y la solución solo le da al problema una mejor interfaz. Sobre la distancia entre saber que algo está mal y saber qué está mal."
+    }
+  ]
+}

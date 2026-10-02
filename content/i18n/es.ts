@@ -18,6 +18,8 @@ export default {
   sections: {
     highlights: "Logros Clave",
     experience: "Experiencia",
+    writing: "Publicaciones",
+    getInTouch: "Contacto",
     skills: "Habilidades y Expertise",
     tools: "Herramientas",
     contact: "Contacto",

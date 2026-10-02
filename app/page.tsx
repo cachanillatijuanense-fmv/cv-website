@@ -6,6 +6,7 @@ import siteData from "@/content/site.json"
 import experienceData from "@/content/experience.json"
 import skillsData from "@/content/skills.json"
 import toolsData from "@/content/tools.json"
+import writingData from "@/content/writing.json"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Experience } from "@/components/experience"
@@ -14,6 +15,8 @@ import { Footer } from "@/components/footer"
 import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
 import { Tools } from "@/components/tools"
+import { Writing } from "@/components/writing"
+import { ContactSection } from "@/components/contact-section"
 
 export default function HomePage() {
   const [language, setLanguage] = useState<Language>("en")
@@ -48,22 +51,15 @@ export default function HomePage() {
 
         <About data={siteData} language={language} translations={translations} />
 
-        <Skills data={skillsData} translations={translations} />
-
         <Experience data={experienceData} language={language} translations={translations} />
+
+        <Writing data={writingData} language={language} translations={translations} />
+
+        <Skills data={skillsData} translations={translations} />
 
         <Tools data={toolsData} translations={translations} />
 
-        {/* Final callout replacing the form; keeps #contact anchor for existing links */}
-        <section id="contact" className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Let's work together
-              </h2>
-            </div>
-          </div>
-        </section>
+        <ContactSection data={siteData} language={language} translations={translations} />
       </main>
 
       <Footer data={siteData} translations={translations} />
