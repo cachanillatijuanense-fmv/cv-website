@@ -6,7 +6,7 @@ import Image from "next/image"
 import type { Language } from "@/lib/i18n"
 // CTAs restored to left column; intro video moved below Hero in page layout
 import { Button } from "./ui/button"
-import { Mail, MessageCircle, Phone, MessageSquareText, FileDown } from "lucide-react"
+import { Mail, MessageCircle, FileDown } from "lucide-react"
 import { generatePresentationLetterPdf, FILENAMES } from "@/lib/presentationLetterPdf"
 
 interface HeroProps {
@@ -37,11 +37,6 @@ export function Hero({ data, language, translations }: HeroProps) {
 
   return (
     <section className="relative overflow-hidden bg-background sm:bg-gradient-to-br sm:from-background sm:via-background sm:to-primary/5">
-      {/* Background Image */}
-      <div className="absolute inset-0 opacity-10 hidden sm:block">
-        <Image src="/images/skyline.jpg" alt="" fill className="object-cover" priority />
-      </div>
-
       <div className="container relative mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Left Column: Text Content */}
@@ -52,7 +47,7 @@ export function Hero({ data, language, translations }: HeroProps) {
             className="space-y-6"
           >
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
                 {data.hero?.name}
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold text-pretty">
@@ -89,22 +84,6 @@ export function Hero({ data, language, translations }: HeroProps) {
                   </a>
                 </Button>
               )}
-              {data.hero?.phone_number && (
-                <Button asChild variant="outline" size="lg" className="bg-transparent">
-                  <a href={`tel:${data.hero.phone_number}`}>
-                    <Phone className="h-4 w-4" />
-                    {data.hero?.[language === "es" ? "cta_call_es" : "cta_call_en"] || translations.cta.phone}
-                  </a>
-                </Button>
-              )}
-              {data.hero?.sms_number && (
-                <Button asChild variant="outline" size="lg" className="bg-transparent">
-                  <a href={`sms:${data.hero.sms_number}`}>
-                    <MessageSquareText className="h-4 w-4" />
-                    {data.hero?.[language === "es" ? "cta_sms_es" : "cta_sms_en"] || "SMS"}
-                  </a>
-                </Button>
-              )}
               <Button
                 variant="outline"
                 size="lg"
@@ -128,7 +107,7 @@ export function Hero({ data, language, translations }: HeroProps) {
             className="space-y-8"
           >
             {/* Headshot */}
-            <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
+            <div className="relative mx-auto w-72 h-72 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem]">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-20" />
               <Image
                 src="/images/fabian-new.png"
